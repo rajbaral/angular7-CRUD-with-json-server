@@ -17,8 +17,7 @@
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <input type="text" class="form-control" id="jobTitle" formControlName="jobTitle" placeholder="Job Title" />
-        </div>
-        <!--We may have to make a service call to get this list-->
+        </div>       
         <select id="site" class="col-md-6 col-sm-12 custom-select" formControlName="site" placeholder="select">
           <option [ngValue]="site" disabled selected>Select</option>
           <option *ngFor="let site of sites" [ngValue]="site.siteName">{{ site.siteName }}</option>

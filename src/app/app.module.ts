@@ -15,7 +15,7 @@ import { EmployeesComponent } from './employees/employees.component';
 import { LoginComponent } from './login/login.component';
 import { EmployeeGuard } from './guards/employee.guard';
 
-// We may be missing a route...
+
 const ROUTES = [
   {
     path: '',
@@ -35,7 +35,7 @@ const ROUTES = [
   }
 ];
 
-// Notice how both FormsModule and ReactiveFormsModule imported...choices, choices!
+
 @NgModule({
     declarations: [AppComponent, BannerComponent, EmployeeDetailsComponent, EmployeesComponent, LoginComponent],
   imports: [
