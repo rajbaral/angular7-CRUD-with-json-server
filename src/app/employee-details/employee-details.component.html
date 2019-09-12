@@ -1,0 +1,54 @@
+<div class="container-fluid col-md-6 col-sm-12">
+  <h2 *ngIf="!editmode" class="text-center lead">Add Employee to Construction site</h2>
+  <h2 *ngIf="editmode" class="text-center lead">Edit your Construction Employee </h2>
+  <br />
+  <!--Template Driven Form or Model Driven Form?-->
+  <form (ngSubmit)="onSubmit(employeeForm)" [formGroup]="employeeForm">
+    <div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <input type="text" class="form-control" id="firstName" formControlName="firstName" placeholder="First Name" />
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <input type="text" class="form-control" id="lastName" formControlName="lastName" placeholder="Last Name" />
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <input type="text" class="form-control" id="jobTitle" formControlName="jobTitle" placeholder="Job Title" />
+        </div>
+        <!--We may have to make a service call to get this list-->
+        <select id="site" class="col-md-6 col-sm-12 custom-select" formControlName="site" placeholder="select">
+          <option [ngValue]="site" disabled selected>Select</option>
+          <option *ngFor="let site of sites" [ngValue]="site.siteName">{{ site.siteName }}</option>
+        </select>
+      </div>
+      <br />
+      <div class="form-group col-md-6 col-sm-12">
+        <div class="row">
+          <label id="activeStatus" class="md-check lead">
+            <input type="radio" value="Active" name="status" formControlName="status" /> Active
+          </label>
+          <label class="md-check lead">
+            <input type="radio" value="Inactive" name="status" formControlName="status" /> Inactive
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <a (click)="back()" class="btn btn-danger"> Back </a>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <!--Disable if form is invalid-->
+        <button type="submit" class="btn btn-primary pull-right" [disabled]="!employeeForm.valid">
+          Save Employee
+        </button>
+      </div>
+    </div>
+
+
+
+  </form>
+</div>

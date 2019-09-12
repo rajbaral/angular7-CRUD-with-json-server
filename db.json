@@ -1,0 +1,78 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Jeb",
+      "lastName": "Jackson",
+      "jobTitle": "Civil Engineer",
+      "site": "Portland Site",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "firstName": "ryan",
+      "lastName": "gosling",
+      "jobTitle": "Project Manager",
+      "site": "Vancouver Site",
+      "status": "Inactive"
+    },
+    {
+      "id": 3,
+      "firstName": "ISHWOR",
+      "lastName": "Ojha",
+      "jobTitle": "Construction Worker",
+      "site": "Vancouver Site",
+      "status": "Active"
+    },
+    {
+      "id": 8,
+      "firstName": "Test66",
+      "lastName": "User",
+      "jobTitle": "some job",
+      "site": "Portland Site",
+      "status": "Inactive"
+    }
+  ],
+  "sites": [
+    {
+      "id": 1,
+      "siteName": "Beaverton Site"
+    },
+    {
+      "id": 2,
+      "siteName": "Los Angeles Site1"
+    },
+    {
+      "id": 3,
+      "siteName": "Los Angeles Site2"
+    },
+    {
+      "id": 4,
+      "siteName": "Los Angeles Site3"
+    },
+    {
+      "id": 5,
+      "siteName": "Seattle Site"
+    },
+    {
+      "id": 6,
+      "siteName": "Hillsboro Site"
+    },
+    {
+      "id": 7,
+      "siteName": "Vancouver Site"
+    },
+    {
+      "id": 8,
+      "siteName": "Forest Grove Site"
+    },
+    {
+      "id": 9,
+      "siteName": "Portland Site"
+    },
+    {
+      "id": 10,
+      "siteName": "Salt Lake City Site2"
+    }
+  ]
+}
